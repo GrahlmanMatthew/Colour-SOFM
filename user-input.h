@@ -1,9 +1,10 @@
+// Header Purpose: these functions allow for the collection of user input for a variety of user-specified types.
 #include <iostream>
 #include <limits>
 #include <string>
 using namespace std;
 
-/*  Purpose: returns the value inputted by the user as an integer only if the value is between the lower and upper bounds (inclusive).
+/*  get_integer_input(): returns the value inputted by the user as an integer only if the value is between the lower and upper bounds (inclusive).
     Parameters:
         @input_name: a string which represents the name of the input value to be collected.
         @lower_bound: an integer which represents the lower bound of the input value.
@@ -20,7 +21,7 @@ int get_integer_input(string input_name, int lower_bound, int upper_bound){
     return value;
 }
 
-/*  Purpose: returns the value inputted by the user as an float only if the value is between the lower and upper bounds (inclusive).
+/*  get_float_input(): returns the value inputted by the user as an float only if the value is between the lower and upper bounds (inclusive).
     Parameters:
         @input_name: a string which represents the name of the input value to be collected.
         @lower_bound: an float which represents the lower bound of the input value.
